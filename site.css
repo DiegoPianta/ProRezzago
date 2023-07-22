@@ -28,7 +28,11 @@ body {background-color: #1a4d35;
 
 
 
-
+@media (max-width: 1400px) {
+  .menu {
+    display: none;
+  }
+}
 
 
 .menu {
@@ -112,10 +116,16 @@ justify-content: center;width: 100%;}
 #face {
   right: 0;
   margin-right: 30px;
+  transition: 800ms;
 }
 
-#ista{margin-left: 30px;}
+#ista{margin-left: 30px;transition: 800ms;}
 
 .stelle{height: 40px;width: auto;margin-left: 2%;margin-right: 2%;}
 
 #link{color: #143a28;text-decoration: none;}
+
+#ista:hover{width: 70px;height: 70px;}
+#face:hover{width: 70px;height: 70px;}
+#number{color: #143a28;}
+
