@@ -5,7 +5,8 @@ body {background-color: #ffffff;
   
 }
 
-#titolo{color: rgb(0, 0, 0);}
+#titolo{color: rgb(0, 0, 0);transition: 1500ms;user-select: none;}
+#titolo:hover{color:#1a4d35;transition: 1500ms;}
 
 .header-container {
   display: flex; 
@@ -24,9 +25,9 @@ body {background-color: #ffffff;
   font-size: 64px; 
 }
 
-.titoli{color: #000000;text-align: center;margin-left: 3%;margin-right: 3%;border: 0;font-size: 50px;}
+.titoli{color: #000000;text-align: center;margin-left: 3%;margin-right: 3%;border: 0;font-size: 40px;}
 
-@media screen and (max-width: 1360px){.titoli{font-size: 25px;}}
+@media screen and (max-width: 1360px){.titoli{font-size: 20px;}}
 
 
 
@@ -45,6 +46,7 @@ body {background-color: #ffffff;
   align-items: center; 
   justify-content: center; 
   margin-top: 40px;
+  
 }
 
 .menu ul {
@@ -54,6 +56,7 @@ body {background-color: #ffffff;
 }
 
 .menu ul li:hover{color: #000000;transition: 800ms;}
+.menu ul li{transition: 800ms;}
 
 .menu-item {
   display: inline-block;
@@ -80,6 +83,7 @@ body {background-color: #ffffff;
 .submenu li {
   padding: 8px;
   cursor: pointer;
+  transition: 800ms;
 }
 
 .submenu li:hover {
@@ -101,15 +105,19 @@ body {background-color: #ffffff;
 }
 
 .art{height: 1000px;margin: 0 1% 1% 1%;}
-
-@media screen and (max-width: 1800px) {.art{height: 900px;}}
-@media screen and (max-width: 1700px) {.art{height: 800px;}}
-@media screen and (max-width: 1600px) {.art{height: 700px;}}
-@media screen and (max-width: 1500px) {.art{height: 600px;}}
-@media screen and (max-width: 1400px) {.art{height: 500px;}}
-@media screen and (max-width: 1030px) {.articoli{display: flex;
+.art2{height: 100px;margin: 0 10% 1% 10%;}
+.art3{height: 100px;margin: 0 10% 1% 10%;}
+@media screen and (max-width: 4000px){.art3{display: none;}}
+@media screen and (max-width: 1850px) {.art{height: 900px;}}
+@media screen and (max-width: 1800px) {.art{height: 800px;}}
+@media screen and (max-width: 1700px) {.art{height: 700px;}}
+@media screen and (max-width: 1600px) {.art{height: 600px;}}
+@media screen and (max-width: 1500px) {.art{height: 500px;}}
+@media screen and (max-width: 1430px) {.articoli{display: flex;
   flex-direction: column; align-items: center;}
   .art{height: 1000px;}
+  .art2{display: none;}
+  .art3 {display: list-item;}
 }
 
 @media screen and (max-width: 1030px) {#face {left: 0;margin-left: 110px;}}
@@ -117,6 +125,9 @@ body {background-color: #ffffff;
 
 .articoli{display: flex;
 justify-content: center;}
+
+.articoli2{display: flex;
+  justify-content: center;}
 
 #social {
   position: relative;
