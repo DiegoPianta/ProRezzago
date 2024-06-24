@@ -6,7 +6,7 @@ body {background-color: #ffffff;
 }
 
 #titolo{color: rgb(0, 0, 0);transition: 1500ms;user-select: none;}
-#titolo:hover{color:#00b9f1;transition: 1500ms;}
+#titolo:hover{color: #c4a85c;transition: 1500ms;}
 
 .header-container {
   display: flex; 
@@ -17,6 +17,14 @@ body {background-color: #ffffff;
 
 #logo {
   width: 200px; 
+  height: auto; 
+  margin-right: 10px;
+  transition: 0.8ms; 
+}
+
+#logo :hover {
+  transition: 0.8ms;
+  width: 250px; 
   height: auto; 
   margin-right: 10px; 
 }
@@ -94,7 +102,7 @@ body {background-color: #ffffff;
 }
 
 .background{background-color: #ffffff;margin-top: -20;margin-left: 0;margin-right: 0;}
-#background2{background-color: #ad9551;margin-left: 0;margin-right: 0;}
+#background2{background-color: #ad9551;margin-left: 0;margin-right: 0;margin-top: -5;margin-bottom: -5;}
 #background3{background-color: #ffffff;margin-left: 0;margin-right: 0;}
 
 @media screen and (max-width: 1400px) {
@@ -133,7 +141,7 @@ body {background-color: #ffffff;
 .stelle{height: 40px;width: auto;margin-left: 2%;margin-right: 2%;}
 
 #link{color: #ad9551;}
-#link:hover{color: #050372;}
+#link:hover{color: #c4a85c;}
 
 #ista:hover{width: 70px;height: 70px;}
 #face:hover{width: 70px;height: 70px;}
@@ -148,5 +156,61 @@ body {background-color: #ffffff;
 
 
 #footer{display: flex;justify-content: center;align-items: center;
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffff;margin-left: 10%;margin-right: 10%;
   }
+
+
+
+
+
+  .unique-container {
+    display: flex;justify-content: center;align-items: center;
+    background-color: #ad9551;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.unique-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #c4a85c;
+}
+
+.unique-image {
+    width: 450px;
+    height: auto;
+    margin-right: 20px;
+    transition: transform 0.3s, border-radius 0.3s;
+}
+
+.unique-image:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.unique-text {
+    max-width: 400px;
+}
+
+.unique-title {
+    margin: 0 0 10px;
+    font-size: 64px;
+    color: #333;
+}
+
+.unique-paragraph {
+    margin: 0;
+    font-size: 36px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
