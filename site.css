@@ -5,7 +5,8 @@ body {background-color: #ffffff;
   
 }
 
-#titolo{color: rgb(0, 0, 0);transition: 1500ms;user-select: none; margin-left: -2%;}
+#titolo{color: rgb(0, 0, 0);transition: 1500ms;user-select: none; margin-left: -2%; 
+}
 #titolo:hover{color: #c4a85c;transition: 1500ms;}
 
 .header-container {
@@ -20,6 +21,8 @@ body {background-color: #ffffff;
   height: auto; 
   margin-right: 10px;
   transition: 0.8ms; 
+  
+  
 }
 
 #logo :hover {
@@ -33,7 +36,8 @@ body {background-color: #ffffff;
   font-size: 64px; 
 }
 
-.titoli{color: #000000;text-align: center;margin-left: 3%;margin-right: 3%;border: 0;font-size: 40px;}
+.titoli{color: #000000;text-align: center;margin-left: 3%;margin-right: 3%;border: 0;font-size: 40px; animation: fadeIn 2s ease-in;
+}
 
 @media screen and (max-width: 1360px){.titoli{font-size: 20px;}}
 
@@ -113,13 +117,16 @@ body {background-color: #ffffff;
 }
 
 
-@media screen and (max-width: 1030px) {#face {left: 0;margin-left: 110px;}}
+@media screen and (max-width: 1030px) 
+{#face {left: 0;margin-left: 110px;}
+}
 
 
 
 #social {
   position: relative;
   height: 100px; 
+  
   
 }
 
@@ -128,6 +135,8 @@ body {background-color: #ffffff;
   height: 50px; 
   position: absolute;
   top: 0;
+  
+  
 }
 
 #face {
@@ -225,7 +234,7 @@ body {background-color: #ffffff;
 .titoli{font-size: 30px ;}
 }
 
-@media screen and (max-width: 1030px) 
+@media screen and (max-width: 1230px) 
 {#footer {
   display: flex;
   flex-wrap: wrap;
@@ -239,6 +248,11 @@ body {background-color: #ffffff;
 .iconecontatti{display: none;}
   }
 
+
+
+
+
+ 
 
 
 
